@@ -85,8 +85,7 @@ $conn->close();
                             <div class="form-group form-button">
                                 <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
                             </div>
-                            <p style="margin-top: 10px; text-align: center;">Already have an Account? <a
-                                    href="login.php">Login Now</a></p>
+                            <p style="margin-top: 10px; text-align: center;">Sudah Punya Akun? <a href="login.php">Login</a></p>
                         </form>
                     </div>
                     <div class="signup-image">

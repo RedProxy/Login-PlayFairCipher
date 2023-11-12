@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['signin'])) {
                     </div>
 
                     <div class="signin-form">
-                        <h2 class="form-title">Masuk</h2>
+                        <h2 class="form-title">Sign In</h2>
                         <!-- Menampilkan pesan kesalahan -->
                         <?php echo $loginMessage; ?>
                         <form method="POST" class="register-form" id="login-form">
@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['signin'])) {
                             <div class="form-group form-button">
                                 <input type="submit" name="signin" id="signin" class="form-submit" value="Masuk" />
                             </div>
-                            <p style="margin-top: 10px; text-align: center;">Belum punya akun? <a href="register.php">Daftar Sekarang</a></p>
+                            <p style="margin-top: 10px; text-align: center;">Belum punya akun? <a href="register.php">Register</a></p>
                         </form>
                     </div>
                 </div>
