@@ -68,15 +68,14 @@ $conn->close();
                                 <input type="text" name="name" id="name" placeholder="Username" />
                             </div>
                             <div class="form-group position-relative">
-                                <input type="password" name="password" id="InputForPassword" class="form-control">
+                                <input type="password" name="password" id="InputForPassword" placeholder="Password" class="form-control">
                                 <!-- Ikon mata yang dapat diklik -->
                                 <i id="password-toggle-icon"
                                     class="fas fa-eye-slash position-absolute end-0 top-50 translate-middle-y"
                                     onclick="togglePasswordVisibility('InputForPassword')" style="cursor: pointer;"></i>
                             </div>
                             <div class="form-group position-relative">
-                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"
-                                    class="form-control">
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your Password" class="form-control">
                                 <!-- Ikon mata yang dapat diklik -->
                                 <i id="confirm-password-toggle-icon"
                                     class="fas fa-eye-slash position-absolute end-0 top-50 translate-middle-y"
@@ -85,7 +84,8 @@ $conn->close();
                             <div class="form-group form-button">
                                 <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
                             </div>
-                            <p style="margin-top: 10px; text-align: center;">Sudah Punya Akun? <a href="login.php">Login</a></p>
+                            <p style="margin-top: 10px; text-align: center;">Sudah Punya Akun? <a
+                                    href="login.php">Login</a></p>
                         </form>
                     </div>
                     <div class="signup-image">
