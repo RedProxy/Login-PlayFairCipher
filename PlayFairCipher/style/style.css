@@ -1,152 +1,14 @@
-/* Menggunakan display flex */
-.display-flex,
-.display-flex-center,
-.signup-content,
-.signin-content,
-.social-login,
-.socials {
-  display: flex;
-  display: -webkit-flex;
-}
-
-/* Mengatur gaya tautan saat fokus atau aktif */
-a:focus,
-a:active {
-  text-decoration: none;
-  outline: none;
-  transition: all 300ms ease 0s;
-  -moz-transition: all 300ms ease 0s;
-  -webkit-transition: all 300ms ease 0s;
-  -o-transition: all 300ms ease 0s;
-  -ms-transition: all 300ms ease 0s;
-}
-
-/* Mengatur tampilan checkbox */
-input[type=checkbox] {
-  appearance: checkbox !important;
-  -moz-appearance: checkbox !important;
-  -webkit-appearance: checkbox !important;
-  -o-appearance: checkbox !important;
-  -ms-appearance: checkbox !important;
-}
-
-/* Mengatur tampilan radio button */
-input[type=radio] {
-  appearance: radio !important;
-  -moz-appearance: radio !important;
-  -webkit-appearance: radio !important;
-  -o-appearance: radio !important;
-  -ms-appearance: radio !important;
-}
-
-/* Mengatur tampilan gambar */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 /* Mengatur tampilan elemen figure */
 figure {
   margin: 0;
-}
-
-/* Mengatur tampilan paragraf */
-p {
-  margin-bottom: 0px;
-  font-size: 15px;
-  color: #777;
-}
-
-/* Mengatur tampilan heading 2 */
-h2 {
-  line-height: 1.66;
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  color: #222;
-  font-family: Poppins;
-  font-size: 36px;
+  text-align: center;
 }
 
 /* Mengatur tampilan elemen dengan class main */
 .main {
   background: #f8f8f8;
   padding: 150px 0;
-}
-
-/* Mengatur tampilan body */
-body {
-  font-size: 13px;
-  line-height: 1.8;
-  color: #222;
-  background: #f8f8f8;
-  font-weight: 400;
-  font-family: Poppins;
-}
-
-/* Mengatur tampilan container */
-.container {
-  width: 900px;
-  background: #fff;
-  margin: 0 auto;
-  box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
-  -o-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
-  -ms-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
-  border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -o-border-radius: 20px;
-  -ms-border-radius: 20px;
-}
-
-/* Mengatur tampilan elemen dengan class display-flex */
-.display-flex {
-  justify-content: space-between;
-  -moz-justify-content: space-between;
-  -webkit-justify-content: space-between;
-  -o-justify-content: space-between;
-  -ms-justify-content: space-between;
-  align-items: center;
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  -o-align-items: center;
-  -ms-align-items: center;
-}
-
-/* Mengatur tampilan elemen dengan class display-flex-center */
-.display-flex-center {
-  justify-content: center;
-  -moz-justify-content: center;
-  -webkit-justify-content: center;
-  -o-justify-content: center;
-  -ms-justify-content: center;
-  align-items: center;
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  -o-align-items: center;
-  -ms-align-items: center;
-}
-
-/* Mengatur tampilan body dan html */
-body,
-html {
   overflow: hidden;
-  height: 100%;
-  margin: 0;
-}
-
-/* Mengatur posisi container secara absolut */
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
 }
 
 /* Mengatur tampilan elemen dengan class signup */
@@ -166,11 +28,14 @@ html {
 .signin-image {
   width: 50%;
   overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
 }
 
 /* Mengatur tampilan gambar signup */
 .signup-image {
-  margin: 0 55px;
+  margin: 0 55px 0 0;
+  margin-top: 45px;
 }
 
 /* Mengatur margin pada form title */
@@ -178,30 +43,15 @@ html {
   margin-bottom: 33px;
 }
 
-/* Mengatur margin pada gambar signup */
-.signup-image {
-  margin-top: 45px;
-}
-
-/* Mengatur tampilan elemen figure */
-figure {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
 /* Mengatur tampilan tombol submit form */
 .form-submit {
   display: inline-block;
   background: #6dabe4;
   color: #fff;
-  border-bottom: none;
+  border: none;
   width: auto;
   padding: 15px 39px;
   border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
   margin-top: 25px;
   cursor: pointer;
 }
@@ -216,7 +66,7 @@ figure {
   margin-top: 16px;
 }
 
-/* Mengatur tampilan tautan gambar signup */
+/* Mengatur tampilan elemen tautan gambar signup */
 .signup-image-link {
   font-size: 14px;
   color: #222;
@@ -256,11 +106,11 @@ figure {
 
 /* Mengatur lebar input form */
 input {
-  width: 85%;
+  width: 100%;
   display: block;
   border: none;
   border-bottom: 1px solid #999;
-  padding: 6px 30px;
+  padding: 6px 0;
   font-family: Poppins;
   box-sizing: border-box;
 }
@@ -277,10 +127,6 @@ label {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   color: #222;
 }
 
@@ -307,37 +153,10 @@ label {
   color: #721c24;
 }
 
-/* Mengatur tampilan transform pada sumbu Y secara tengah */
-.translate-middle-y {
-  -webkit-transform: translateY(-50%) !important;
-  transform: translateY(-50%) !important;
-}
-
-/* Mengatur posisi elemen ke ujung kanan */
-.end-0 {
-  right: 0 !important;
-}
-
-/* Mengatur posisi elemen ke posisi tengah atas */
-.top-50 {
-  top: 50% !important;
-}
-
-/* Mengatur tampilan elemen dengan class position-absolute */
-.position-absolute {
-  position: absolute !important;
-}
-
-/* Mengatur tampilan elemen dengan class position-relative */
-.position-relative {
-  position: relative;
-}
-
 /* Mengatur tampilan ikon toggle password */
 #password-toggle-icon {
   position: absolute;
-  right: 30px;
-  /* Mengganti nilai right untuk menggeser ikon lebih jauh ke kiri */
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;

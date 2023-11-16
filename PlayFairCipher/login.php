@@ -16,12 +16,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['signin'])) {
     $username = mysqli_real_escape_string($conn, $_POST['your_name']);
     $password = mysqli_real_escape_string($conn, $_POST['your_pass']);
 
-    // Mengeksekusi query untuk mendapatkan informasi pengguna berdasarkan username
-    $stmt = $conn->prepare("SELECT * FROM users WHERE username=?");
-    $stmt->bind_param("s", $username);
-    $stmt->execute();
-    $result = $stmt->get_result();
-
+    // Memeriksa apakah kata sandi memenuhi kriteria keamanan
+    if (!isPasswordValid($password)) {
+        $loginMessage = '<div class="alert alert-danger">Password Salah.</div>';
+    } else {
+        // Mengeksekusi query untuk mendapatkan informasi pengguna berdasarkan username
+        $stmt = $conn->prepare("SELECT * FROM users WHERE username=?");
+        $stmt->bind_param("s", $username);
+        $stmt->execute();
+        $result = $stmt->get_result();
+    
     // Jika data pengguna dengan username tersebut ditemukan
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
@@ -45,6 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['signin'])) {
     // Menutup statement dan koneksi database
     $stmt->close();
     $conn->close();
+}
 }
 ?>
 
